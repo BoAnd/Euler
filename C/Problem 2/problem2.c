@@ -18,6 +18,6 @@ int main()
         if(next % 2 == 0)
             answer += next;
     }
-    printf("Answer: %d",answer);
+    printf("Answer: %d\n",answer);
     return 0;
 }
