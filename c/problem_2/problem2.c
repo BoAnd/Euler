@@ -7,9 +7,11 @@ int main()
     unsigned long prev = 1;
     unsigned long next = 2;
     unsigned long answer = 2;
+
     printf("1: %d\n",prev);
     printf("2: %d\n",next);
-    for(i = 3; i < 33; ++i)
+
+    for(; i < 33; ++i)
     {
         tmp = prev + next;
         prev = next;
@@ -18,6 +20,7 @@ int main()
         if(next % 2 == 0)
             answer += next;
     }
+
     printf("Answer: %d\n",answer);
     return 0;
 }
